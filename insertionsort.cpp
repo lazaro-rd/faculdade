@@ -20,9 +20,8 @@
 using namespace std;
 
 void insertionSort(int A[], int l){
-	int key;
-	int i;
-	for(int j=1;j<=l;j++){
+	int i, j;
+	for(j=1;j<=l;j++){
 		i = j;
 		while(i>0 && (A[i] < A[i-1])){
 			swap(A[i], A[i-1]);
